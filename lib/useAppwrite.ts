@@ -11,7 +11,7 @@ interface UseAppwriteReturn<T, P> {
   data: T | null;
   loading: boolean;
   error: string | null;
-  refetch: (newParams: P) => Promise<void>;
+  refetch: (newParams?: P) => Promise<void>;
 }
 
 export const useAppwrite = <T, P extends Record<string, string | number>>({
@@ -40,16 +40,16 @@ export const useAppwrite = <T, P extends Record<string, string | number>>({
         setLoading(false);
       }
     },
-    [fn]
+    [fn, params]
   );
 
   useEffect(() => {
     if (!skip) {
       fetchData(params);
     }
-  }, []);
+  }, [fetchData, params, skip]);
 
-  const refetch = async (newParams: P) => await fetchData(newParams);
+  const refetch = async (newParams?: P) => await fetchData(newParams || params);
 
   return { data, loading, error, refetch };
 };
