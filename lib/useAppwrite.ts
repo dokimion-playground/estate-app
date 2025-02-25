@@ -24,7 +24,7 @@ export const useAppwrite = <T, P extends Record<string, string | number>>({
   const [error, setError] = useState<string | null>(null);
 
   const fetchData = useCallback(
-    async (fetchParams: P) => {
+    async (fetchParams: P = params) => {
       setLoading(true);
       setError(null);
 
