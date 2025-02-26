@@ -40,16 +40,18 @@ export const useAppwrite = <T, P extends Record<string, string | number>>({
         setLoading(false);
       }
     },
-    [fn, params]
+    [fn]
   );
 
   useEffect(() => {
     if (!skip) {
       fetchData(params);
     }
-  }, [fetchData, params, skip]);
+  }, []);
 
-  const refetch = async (newParams?: P) => await fetchData(newParams || params);
+  const refetch = async (newParams?: P) => {
+    return await fetchData(newParams || params);
+  };
 
   return { data, loading, error, refetch };
 };
