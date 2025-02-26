@@ -3,32 +3,32 @@ import images from "./images";
 
 export const cards = [
   {
-    title: "Card 1",
-    location: "Location 1",
+    title: "카드 1",
+    location: "위치 1",
     price: "$100",
     rating: 4.8,
     category: "house",
     image: images.newYork,
   },
   {
-    title: "Card 2",
-    location: "Location 2",
+    title: "카드 2",
+    location: "위치 2",
     price: "$200",
     rating: 3,
     category: "house",
     image: images.japan,
   },
   {
-    title: "Card 3",
-    location: "Location 3",
+    title: "카드 3",
+    location: "위치 3",
     price: "$300",
     rating: 2,
     category: "flat",
     image: images.newYork,
   },
   {
-    title: "Card 4",
-    location: "Location 4",
+    title: "카드 4",
+    location: "위치 4",
     price: "$400",
     rating: 5,
     category: "villa",
@@ -38,16 +38,16 @@ export const cards = [
 
 export const featuredCards = [
   {
-    title: "Featured 1",
-    location: "Location 1",
+    title: "추천 1",
+    location: "위치 1",
     price: "$100",
     rating: 4.8,
     image: images.newYork,
     category: "house",
   },
   {
-    title: "Featured 2",
-    location: "Location 2",
+    title: "추천 2",
+    location: "위치 2",
     price: "$200",
     rating: 3,
     image: images.japan,
@@ -56,83 +56,83 @@ export const featuredCards = [
 ];
 
 export const categories = [
-  { title: "All", category: "All" },
-  { title: "Houses", category: "House" },
-  { title: "Condos", category: "Condos" },
-  { title: "Duplexes", category: "Duplexes" },
-  { title: "Studios", category: "Studios" },
-  { title: "Villas", category: "Villa" },
-  { title: "Apartments", category: "Apartments" },
-  { title: "Townhomes", category: "Townhomes" },
-  { title: "Others", category: "Others" },
+  { title: "전체", category: "All" },
+  { title: "주택", category: "House" },
+  { title: "콘도", category: "Condos" },
+  { title: "듀플렉스", category: "Duplexes" },
+  { title: "스튜디오", category: "Studios" },
+  { title: "빌라", category: "Villa" },
+  { title: "아파트", category: "Apartments" },
+  { title: "타운홈", category: "Townhomes" },
+  { title: "기타", category: "Others" },
 ];
 
 export const settings = [
   {
-    title: "My Bookings",
+    title: "내 예약",
     icon: icons.calendar,
   },
   {
-    title: "Payments",
+    title: "결제",
     icon: icons.wallet,
   },
   {
-    title: "Profile",
+    title: "프로필",
     icon: icons.person,
   },
   {
-    title: "Notifications",
+    title: "알림",
     icon: icons.bell,
   },
   {
-    title: "Security",
+    title: "보안",
     icon: icons.shield,
   },
   {
-    title: "Language",
+    title: "언어",
     icon: icons.language,
   },
   {
-    title: "Help Center",
+    title: "도움말 센터",
     icon: icons.info,
   },
   {
-    title: "Invite Friends",
+    title: "친구 초대",
     icon: icons.people,
   },
 ];
 
 export const facilities = [
   {
-    title: "Laundry",
+    title: "세탁기",
     icon: icons.laundry,
   },
   {
-    title: "Car Parking",
+    title: "주차장",
     icon: icons.carPark,
   },
   {
-    title: "Sports Center",
+    title: "운동 시설",
     icon: icons.run,
   },
   {
-    title: "Cutlery",
+    title: "식기류",
     icon: icons.cutlery,
   },
   {
-    title: "Gym",
+    title: "헬스장",
     icon: icons.dumbell,
   },
   {
-    title: "Swimming pool",
+    title: "수영장",
     icon: icons.swim,
   },
   {
-    title: "Wifi",
+    title: "와이파이",
     icon: icons.wifi,
   },
   {
-    title: "Pet Center",
+    title: "반려동물 센터",
     icon: icons.dog,
   },
 ];
