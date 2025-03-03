@@ -29,7 +29,7 @@ const Search = () => {
         <TextInput
           value={search}
           onChangeText={handleSearch}
-          placeholder="Search for anything"
+          placeholder="원하시는 매물을 검색해보세요"
           className="text-sm font-rubik text-black-300 ml-2 flex-1"
         />
       </View>
